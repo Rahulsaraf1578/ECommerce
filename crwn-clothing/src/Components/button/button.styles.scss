@@ -5,11 +5,11 @@
   letter-spacing: 0.5px;
   line-height: 50px;
   padding: 0 35px 0 35px;
-  font-size: 15px;
+  font-size: 15px; /* default font-size */
   background-color: black;
   color: white;
   text-transform: uppercase;
-  font-family: 'Open Sans Condensed';
+  font-family: "Open Sans Condensed";
   font-weight: bolder;
   border: none;
   cursor: pointer;
@@ -20,6 +20,7 @@
     background-color: white;
     color: black;
     border: 1px solid black;
+    font-size: small; /* shrink on hover */
   }
 
   &.google-sign-in {
@@ -29,6 +30,7 @@
     &:hover {
       background-color: #357ae8;
       border: none;
+      font-size: small; /* keep small on hover */
     }
   }
 
@@ -36,11 +38,13 @@
     background-color: white;
     color: black;
     border: 1px solid black;
+    font-size: small;
 
     &:hover {
       background-color: black;
       color: white;
       border: none;
+      font-size: small; /* keep small on hover */
     }
   }
 }
