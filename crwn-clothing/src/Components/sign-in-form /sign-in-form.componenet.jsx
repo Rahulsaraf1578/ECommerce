@@ -3,6 +3,7 @@ import {
   signInWithGooglePopup,
   createUserDocFromUser,
   signInAuthUserWithEmailAndPassword,
+  singInWithGoogleRedirect,
 } from "../../utils/firebase/firebase.utils";
 import FormInput from "../form-input/form-input.component";
 import "./sign-in-form.styles.scss";
@@ -18,7 +19,7 @@ const SignInForm = () => {
   const { email, password } = formFields;
 
   const signInWithGoogle = async () => {
-    await signInWithGooglePopup();
+    await singInWithGoogleRedirect();
   };
 
   const handleSubmit = async (event) => {
